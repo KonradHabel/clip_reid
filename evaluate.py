@@ -197,8 +197,3 @@ if dist_matrix_rerank is not None:
                          test_dataset.query,
                          test_dataset.gallery,
                          cmc_scores=True)
-
-
-
-
-    

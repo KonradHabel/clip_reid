@@ -70,6 +70,3 @@ if os.path.isfile(zip_file) and hashlib.md5(open(zip_file, 'rb').read()).hexdige
     print("Extracting zip file")
     with ZipFile(zip_file) as z:
         z.extractall(path=config.path)
-
-
-

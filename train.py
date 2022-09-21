@@ -386,19 +386,4 @@ for epoch in range(1, config.epochs+1):
         torch.save(model.state_dict(), checkpoint_path)
     
     # Shuffle data for next epoch
-    train_loader.dataset.shuffle()        
-
-    
-    
-
-
-
-
-
-    
-    
-    
-
-
-    
-    
+    train_loader.dataset.shuffle()
