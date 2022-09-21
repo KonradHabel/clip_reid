@@ -9,7 +9,7 @@ Code for the paper: `CLIP-ReIdent: Contrastive Training for Player Re-Identifica
 
 ![CLIP](docs/CLIP-ReIdent.png)
 
-Reformulation of the contrastive language-to-image pre-training approach from CLIP to a contrastive image-to-image training approach using the InfoNCE loss as training objective.
+Reformulation of the contrastive language-to-image pre-training approach of CLIP to a contrastive image-to-image training approach using the InfoNCE loss as training objective.
 
 
 
@@ -24,14 +24,14 @@ Steps for Training and Evaluation:
 5. final predictions: `predict.py`
 
 
-All settings are done by the configuration data-class at the beginning of the scripts.
+All settings are done by the configuration dataclass at the beginning of the scripts.
 
 `download_data.py` downloads and unzips the challenge data from the provided [challenge toolkit](https://github.com/DeepSportRadar/player-reidentification-challenge).
 
 The following data structure is used for all scripts:
 
 ```
-CLIP-ReIdent/
+clip_reid
 ├── data/
 │   ├── data_reid/
 │   │   ├── reid_challenge/

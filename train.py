@@ -73,7 +73,7 @@ class Configuration:
     std:    float = (0.229, 0.224, 0.225) # std  of ImageNet
     
     # Split
-    train_on_all: bool = True             # True: train incl. test data  
+    train_on_all: bool = False            # True: train incl. test data  
     fold: int = -1                        # -1 for given test split | int >=0 for custom folds 
     
     # Training 
@@ -81,7 +81,7 @@ class Configuration:
     epochs: int = 4                       # epochs to train
     batch_size: int = 16                  # batch size for training
     batch_size_eval: int = 64             # batch size for evaluation
-    gpu_ids: tuple = (0,1)                # GPU ids for training e.g. (0,1) multi GPU 
+    gpu_ids: tuple = (0,)                 # GPU ids for training e.g. (0,1) multi GPU 
     mixed_precision: bool = True          # fp16 for faster training
     
     # Learning Rate
@@ -126,7 +126,7 @@ class Configuration:
     cudnn_benchmark: bool = True
     
     # make cudnn deterministic
-    cudnn_deterministic: bool = True
+    cudnn_deterministic: bool = True      # set to False for faster training of CNNs
      
 #----------------------------------------------------------------------------------------------------------------------#  
 # Config                                                                                                               #

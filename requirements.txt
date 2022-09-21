@@ -1,0 +1,9 @@
+torch>=1.11.0
+torchvision
+open-clip-torch>=2.0.2
+timm
+scikit-learn
+albumentations
+tqdm
+transformers
+pandas
