@@ -1,6 +1,6 @@
 # CLIP-ReIdent
 
-[[Paper]](https://doi.org/10.1145/3552437.3555698) [[Checkpoints]](https://drive.google.com/file/d/1Gm5J19okhLdnZTQLUsjfYoI0rwrLQ09i/view?usp=sharing) [[Challenge]](http://mmsports.multimedia-computing.de/mmsports2022/challenge.html)
+[[Paper]](https://doi.org/10.1145/3552437.3555698) [[arXiv]](https://arxiv.org/abs/2303.11855) [[Checkpoints]](https://drive.google.com/file/d/1Gm5J19okhLdnZTQLUsjfYoI0rwrLQ09i/view?usp=sharing) [[Challenge]](http://mmsports.multimedia-computing.de/mmsports2022/challenge.html)
 
 Code for the paper: `CLIP-ReIdent: Contrastive Training for Player Re-Identification`
 
