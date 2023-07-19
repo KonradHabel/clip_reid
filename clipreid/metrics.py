@@ -9,7 +9,7 @@ import torch
 from sklearn.metrics import average_precision_score
 
 def _unique_sample(ids_dict, num):
-    mask = np.zeros(num, dtype=np.bool)
+    mask = np.zeros(num, dtype=np.bool_)
     for _, indices in ids_dict.items():
         i = np.random.choice(indices)
         mask[i] = True
