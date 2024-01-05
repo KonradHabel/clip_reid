@@ -104,7 +104,8 @@ class Configuration:
     normalize_features: int = True        # L2 normalize of features during eval
     
     # Dataset
-    data_dir: str = "./data/data_reid"    # datset path
+    # data_dir: str = "./data/data_reid"    # datset path
+    data_dir: str = "./data/data_wyscout_reid"    # datset path
     prob_flip: str = 0.5                  # probability for random horizontal flip during training 
          
     # Savepath for model checkpoints

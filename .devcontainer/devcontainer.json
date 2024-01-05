@@ -1,0 +1,76 @@
+{
+  "name": "clip-reid",
+  "image": "690616407375.dkr.ecr.us-east-1.amazonaws.com/py-marvel/devcontainers/images/tensorrt:8.5.1.7-1-cuda11.8-devel-ubuntu22.04",
+  // Project specific customizations, on top of defaults from the base image.
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/bin/bash"
+          }
+        },
+        "[python]": {
+          "editor.formatOnSave": true,
+          "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+            "source.organizeImports": true
+          }
+        },
+        "workbench.colorCustomizations": {
+          "editorRuler.foreground": "#ff4081",
+          "titleBar.activeBackground": "#ff9500"
+        },
+        "files.exclude": {
+          "**/*.pyc": {
+            "when": "$(basename).py"
+          },
+          "**/.venv": true,
+          "**/.ruff_cache": true,
+          "**/.pytest_cache": true,
+          "**/.mypy_cache": true,
+          "**/.ipynb_checkpoints": true,
+          "**/.coverage": true,
+          "**/__pycache__": true,
+          "/usr/lib": true
+        },
+        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+        "python.testing.unittestEnabled": false,
+        "python.testing.pytestEnabled": true,
+        "python.languageServer": "Pylance",
+        "autoDocstring.docstringFormat": "numpy-notypes"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-python.vscode-pylance",
+        "ms-python.mypy-type-checker",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-azuretools.vscode-docker",
+        "visualstudioexptteam.vscodeintellicode",
+        "charliermarsh.ruff",
+        "njpwerner.autodocstring",
+        "LittleFoxTeam.vscode-python-test-adapter",
+        "markis.code-coverage",
+        "bungcip.better-toml",
+        "yzhang.markdown-all-in-one",
+        "gruntfuggly.todo-tree",
+        "aaron-bond.better-comments",
+        "076923.python-image-preview",
+        "eamodio.gitlens",
+        "github.copilot",
+        "tana-gh.vector-replace",
+        "tamasfe.even-better-toml"
+      ]
+    }
+  },
+  "initializeCommand": ".devcontainer/devcontainer_init.sh",
+  "postCreateCommand": ".devcontainer/devcontainer_postcreate.sh",
+  "hostRequirements": {
+    "gpu": true
+  },
+  "runArgs": [
+    "--ipc=host"
+  ]
+}

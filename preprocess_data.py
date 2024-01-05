@@ -6,7 +6,8 @@ from dataclasses import dataclass
 @dataclass
 class Configuration:
     n_folds: int = 10
-    path: str = "./data/data_reid"
+    # path: str = "./data/data_reid"
+    path: str = "./data/data_wyscout_reid"
 
 #----------------------------------------------------------------------------------------------------------------------#  
 # Config                                                                                                               #
